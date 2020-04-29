@@ -8,19 +8,21 @@
 
 function reverse(str) {
 
-  // return str.split('').reverse().join('')
+//   return str.split('').reverse().join('')
 // -----------------
-  // let reversed = ""
-  // for (let char of str) {
-  //   reversed = char + reversed
-  // }
-  // return reversed
+  let reversed = ""
+  for (let char of str) {
+    reversed = char + reversed
+    debugger;
+  }
+  return reversed
   // --------------------
 
-
-  return str.split('').reduce((reversed, character) => character + reversed, '')
+  // return str.split('').reduce((reversed, character) => character + reversed, '')
 
 
 }
+
+reverse('asdf')
 
 module.exports = reverse;
